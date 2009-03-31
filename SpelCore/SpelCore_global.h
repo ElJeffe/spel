@@ -1,0 +1,12 @@
+#ifndef SPELCORE_GLOBAL_H
+#define SPELCORE_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(SPELCORE_LIBRARY)
+#  define SPELCORESHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define SPELCORESHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // SPELCORE_GLOBAL_H
